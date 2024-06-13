@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="save_scenario.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="center">
+        <h2>
+            <span>
+            Nexus Test Wizard
+            </span>
+        </h2>
+    </div>
+    <ul>
+        <li>
+            <a href="index.jsp"> Home </a>
+        </li>
+        <li>
+            <a href="save_scenario.jsp" class="active"> Create Scenario </a>
+        </li>
+        <li>
+            <a href="search_scenario.jsp"> Search Scenario </a>
+        </li>
+    </ul>
+    <br>
+    <center>
+        <div class="split left">
+            <center>
+                <u><b> Create New Scenario </b></u>
+            </center>
+            <br>
+            <form action="NavigateToTestCases" method="post">
+                <div class="container">
+                    <div class="input-group">
+                        <label for="project">Project</label>
+                        <input type="text" id="project" name="project" tabindex="1">
+                        <img src="images/searchimage.png" alt="Search Image" id="searchImage" width="20" height="20" onclick="searchProject()">
+                        <label for="release">Release</label>
+                        <input type="month" id="release" name="calendar" tabindex="2">
+                    </div>
+                    <div class="input-group">
+                        <label for="Feature">Initiative/Feature#</label>
+                        <input type="text" id="Feature" name="Feature" tabindex="3">
+                        <label for="FeatureTitle">Initiative/Feature Title</label>
+                        <input type="text" id="FeatureTitle" name="FeatureTitle" tabindex="4">
+                    </div>
+                    <div class="input-group">
+                        <label for="scid">Scenario#</label>
+                        <input type="text" id="scid" name="scid" tabindex="5" readonly>
+                        <div class="input-button">
+                            <button id="clearbtn" type="reset" onclick="clearID()">Clear</button>
+                        </div>
+                        <label for="functag">Functional Tag</label>
+                        <input type="text" id="functag" name="functag" tabindex="6">
+                    </div>
+                    <div class="input-group">
+                        <label for="BDDscenario">Description:</label>
+                        <textarea id="BDDscenario" name="BDDscenario" tabindex="7"></textarea>
+                    </div>
+                    <div class="input-button">
+                        <center>
+                            <input type="button" id="generateIDbtn" onclick="generateID()" value="Generate Scenario ID">
+                            <input type="button" id="savebtn" onclick="insertScenario()" value="Save Scenario ID">
+                            <input type="submit" id="createTCbtn" onclick="createTestCase()" value="Create Test Case" disabled>
+                        </center>
+                    </div>
+                    <div id="alert_div"><center></center></div>
+                </div>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
