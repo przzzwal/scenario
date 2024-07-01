@@ -50,11 +50,12 @@ span:nth-child(6) {
 }
  
 .center {
+    top: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 99%;
-    border: 3px solid black;
+    border: 2px solid black;
     padding: 5px;
     background: #3B5998;
     border-radius: 10px;
@@ -450,7 +451,6 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin
 }
 
 .box {
@@ -554,11 +554,6 @@ textarea:hover {
     background-color: #889DC3; /* Lighter color on hover */
 }
 
-#scdescrip {
-    width: 100%; /* Adjust the width */
-    height: 100px; /* Adjust the height */
-}
-
 
 .box {
     width: 170px;
@@ -613,7 +608,7 @@ textarea:hover {
 
 #cycletable {
     font-family: arial,sans-serif;
-    border-collapse: collapse;
+    border-collapse:collapse;
     width: 80%;
     empty-cells: hide;
 }
@@ -646,6 +641,7 @@ textarea:hover {
     padding-right: 3px;
     padding-left: 3px;
 }
+
 
 #csATable {
     font-family: arial, sans-serif;
