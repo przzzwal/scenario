@@ -1,0 +1,382 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+ 
+h2 {
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    font-size: 2rem;
+    color: #fff;
+}
+ 
+@keyframes scale {
+    100% {
+        transform: scale(1);
+    }
+}
+ 
+span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+ 
+span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+ 
+span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+ 
+span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+ 
+span:nth-child(4) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+ 
+span:nth-child(5) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+ 
+span:nth-child(6) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+ 
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+ 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    border: 3px solid black;
+    padding: 5px;
+    background: #3B5998;
+    border-radius: 10px;
+}
+ 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #DFE3EE;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+ 
+li {
+    float: left;
+    font-family: Arial;
+}
+ 
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+li a:hover:not(.active) {
+    background-color: #3B5998;
+    color: white;
+}
+ 
+.active {
+    background-color: #8B9DC3;
+}
+ 
+.green-box {
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+ 
+.button {
+    padding: 8px 16px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    border: none;
+    background-color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+img{
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.button:hover {
+    background-color: #555;
+}
+ 
+.dropdown-container {
+    display: flex;
+    align-items: center;
+}
+ 
+.dropdown {
+    margin-right: 20px;
+}
+ 
+header {
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    font-family: Garamond, serif;
+}
+ 
+h3 {
+    font-size: 15px;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 10px;
+}
+ 
+h4 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+ 
+#div1 {
+    background-color: DCDCDC;
+}
+ 
+#div2 {
+    max-height: 400px;
+    max-width:3000px;
+    overflow-y: scroll;
+    border: "thick solid #0000FF"
+}
+ 
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin
+}
+ 
+.box {
+    width: 170px;
+    height: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+ 
+#section1 {
+    width:100%;
+    display:flex;
+}
+ 
+.vl {
+    border-left: 2px solid black;
+    height: 680px;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+ 
+.box1 {
+    background-color: #8B9DC3;
+}
+ 
+.box2 {
+    background-color: rgb(4, 12, 29);
+    color: rgb(219, 231, 195);
+    text-align: left;
+}
+ 
+.equaldivide tr td {
+    width: 25%;
+}
+ 
+section {
+    display: flex;
+    flex-direction: row;
+}
+ 
+section > div {
+    padding: 5px;
+    text-align: left;
+}
+ 
+section > div:first-child {
+    width: 70%;
+    background-color: #CBC3E3 ;
+}
+ 
+section > div:last-child {
+    width: 30%;
+    background-color: white;
+}
+ 
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 98.6%;
+    background-color: #b8abcea2;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-top: 8px
+}
+ 
+textarea {
+    border: 2px solid #3B5998;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    resize: vertical;
+    transition: all 0.3s ease;
+}
+ 
+textarea:hover {
+    border-color: #889DC3;
+}
+ 
+textarea:focus {
+    outline: none;
+    border-color: #3B5998;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+ 
+.button {
+    background-color: #3B5998;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+ 
+.button:hover {
+    background-color: #889DC3; /* Lighter color on hover */
+}
+ 
+
+ 
+.box {
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    font-weight: italic;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+ 
+#myDataTable {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+ 
+#myDataTable td, #myDataTable th {
+    color: black;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 3px;
+    font-size: 12px;
+}
+ 
+#myDataTable th {
+    background-color: pink;
+    color: black;
+}
+ 
+#myDataTable tr {
+    background-color: white;
+    font-size: 8px;
+}
+ 
+#myDataTable tr:nth-child(2) {
+    background-color: pink;
+    color: black;
+    font-size: 8px;
+}
+ 
+#myDataTable tr:nth-child(1) {
+    background-color: #2F4F4F;
+    color: white;
+}
+ 
+#cycletable {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    empty-cells: hide;
+}
+ 
+#cycletable td {
+    border: 1px solid black;
+}
+ 
+#cycletable th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    height: 30%;
+    empty-cells: hide;
+}
+ 
+#cycletable tr {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    height: 30%;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+ 
+#csATable, #HeaderTable {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+}
+ 
+#csATable td, #csATable th, #HeaderTable td, #HeaderTable th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 3px;
+    font-size: 12px;
+}
+ 
+#csATable tr, #HeaderTable tr {
+    background-color: #FAFAD2;
+}
+ 
+#csATable tr:nth-child(1), #HeaderTable tr:nth-child(1) {
+    background-color: black;
+    color: rgb(82, 199, 228);
+}
